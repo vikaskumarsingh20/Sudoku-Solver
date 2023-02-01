@@ -5,7 +5,6 @@
  
  * Objective - Takes in Sudoku puzzles and outputs the solution.
 */
-
 #include<iostream>
 #include<fstream>
 using namespace std;
