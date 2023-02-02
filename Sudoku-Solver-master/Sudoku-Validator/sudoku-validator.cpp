@@ -1,8 +1,4 @@
-/*
- *========================
- *    Sudoku Validator
- *========================
- *
+ /*
  * Objective: To verify whether a completed Sudoku puzzle is valid or not.
 */
 
@@ -150,7 +146,6 @@ class SudokuFrame{
 
 };
 
-
 class SudokuValidator{
 
 	SudokuFrame frame;
@@ -162,7 +157,6 @@ class SudokuValidator{
 	public:SudokuValidator(){
 		validateFrame();		
 	}
-
 	/**
 	  *	@desc Calls functions which validates the rows, columns and 3x3 grids.
 	  *	@param none
@@ -184,7 +178,6 @@ class SudokuValidator{
 		else cout<<"Your puzzle is invalid!\n";
 	}
 	
-
 	/**
 	  *	@desc Checks if all values in the frame are between the ranges of 1-9.
 	  *	@param none
@@ -202,7 +195,6 @@ class SudokuValidator{
 
 		return true;
 	}
-
 	/**
 	  *	@desc Checks if the rows are valid in the frame.
 	  *	@param none	
@@ -225,7 +217,6 @@ class SudokuValidator{
 
 		return true;
 	}
-
 	/**
 	  *	@desc Checks if the columns in the frame are valid.
 	  *	@param none
@@ -248,7 +239,6 @@ class SudokuValidator{
 		
 		return true;
 	}
-	
 	/**
 	  *	@desc Checks if the 3x3 grids in the frame are valid.
 	  *	@param none
@@ -271,7 +261,6 @@ class SudokuValidator{
 		
 		return true;
 	}
-
 	/**
 	  *	@desc Checks whether a given value is present in a specified row.
 	  *	@param row (int) The specified row.
@@ -286,7 +275,6 @@ class SudokuValidator{
 		}
 		return false;
 	}
-
 	/**
 	  *	@desc Checks whether a given value is present in the specified column.
 	  *	@param col (int) The specified column.
@@ -301,7 +289,6 @@ class SudokuValidator{
 		}
 		return false;
 	}
-
 	/**
 	  *	@desc Checks whether a given value is present in the specified 3x3 grid.
 	  *	@param squareNumber (int) The 3x3 grid specified. The available grids are 0-8.
@@ -321,13 +308,11 @@ class SudokuValidator{
 				if(frame.getCellValue(rowIter,colIter)==value)
 					return true;
 			}
-		}
+		} 
 
 		return false;
 	}
-
 };
-
 
 int main(){
 	SudokuValidator s;
